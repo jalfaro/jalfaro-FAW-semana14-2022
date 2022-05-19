@@ -1,0 +1,10 @@
+<h1>Listado de Contactos</h1>
+<table>
+    <thead><td>id</td><td>Nombre</td><td>Telefono</td></thead>
+    <tr *ngFor="let contacto of listaContactos">
+        <td>{{contacto.id}}</td>
+        <td>{{contacto.nombre}}</td>
+        <td>{{contacto.telefono}}</td>
+    </tr>
+    <button (click)="logout()">Logout</button>
+</table>
